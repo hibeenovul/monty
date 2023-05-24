@@ -66,7 +66,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		if (!p)
 			return (NULL);
 		for (j = 0; j < new_size; j++)
-			p[j] = *((char *)ptr + );
+			p[j] = *((char *)ptr + j);
 		free(ptr);
 	}
 	return (p);

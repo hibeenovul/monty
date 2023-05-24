@@ -29,7 +29,7 @@ void (*get_opcodes(char *opc))(stack_t **stack, unsigned int line_number)
 	};
 	int j;
 
-	for (j = 0; instruct[i].opcode; j++)
+	for (j = 0; instruct[j].opcode; j++)
 	{
 		if (_strcmp(instruct[j].opcode, opc) == 0)
 			break;
